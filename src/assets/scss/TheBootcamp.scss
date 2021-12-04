@@ -1,0 +1,326 @@
+@import "./foundation/global";
+@import "./foundation/mixin";
+
+@font-face {
+    font-family: DMSansBoldFont;
+    src: $fontFamily4;
+}
+
+@font-face {
+    font-family: DMSansFont;
+    src: $fontFamily1;
+}
+
+.container {
+    @include layout2;
+
+    padding-right: 0 !important;
+    padding-bottom: 50px !important;
+
+    text-align: left;
+
+    margin-bottom: 0 !important;
+
+    .card {
+        @include shadow2;
+
+        @media only screen and (min-width: 0px) and (max-width: 1023px) {
+            box-shadow: none;
+            padding: 0 !important;
+        }
+
+        overflow: hidden;
+        border-radius: 8px;
+        margin-bottom: 50px;
+
+        @media only screen and (min-width: 0px) and (max-width: 1023px) {
+            margin-bottom: 0;
+        }
+    }
+
+    .column-1 {
+        float: left;
+        width: 25%;
+
+        @media only screen and (min-width: 0px) and (max-width: 1023px) {
+            width: 100%;
+        }
+
+        a.link-for-desktop {
+            color: $color3;
+            font-size: 16px;
+
+            @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                display: none;
+            }
+        }
+
+        .card {
+            padding: 30px;
+
+            .title {
+                font-family: DMSansBoldFont;
+                font-size: 24px;
+                line-height: 34px;
+                color: $color2;
+                margin-bottom: 25px;
+
+                @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+            }
+
+            .wrapper-category {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 126px;
+
+                @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                    margin-bottom: 30px;
+                }
+
+                @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+                    margin-bottom: 30px;
+                }
+
+                @media only screen and (min-width: 1440px) and (max-width: 1599px) {
+                    margin-bottom: 110px;
+                }
+
+                @media only screen and (min-width: 1600px) and (max-width: 1920px){
+                    margin-bottom: 168px;
+                }
+
+                span {
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    padding: 7px 30px;
+                    border-radius: 80px;
+                    border: 1px solid $color11;
+                }
+
+                .active-category {
+                    background-color: $color13;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .column-2 {
+        float: right;
+        width: 73%;
+
+        @media only screen and (min-width: 0px) and (max-width: 1023px) {
+            width: 100%;
+        }
+
+        a.link-for-mobile {
+            color: $color3;
+            font-size: 12px;
+            display: none;
+
+            @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                display: block;
+            }
+        }
+
+        h1.title {
+            font-size: 28px;
+            font-family: DMSansBoldFont;
+            margin-bottom: 18px;
+        }
+
+        .card {
+
+            margin-right: 25px;
+
+            @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                margin-right: 15px;
+                @include shadow2;
+                margin-bottom: 24px;
+            }
+
+            .wrapper-image {
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+
+                .wrapper-category {
+                    position: absolute;
+                    top: 14px;
+                    left: 14px;
+                    padding: 5px 10px;
+                    border-radius: 2px;
+                    background-color: $backgroundColor4;
+                    z-index: 1;
+                    box-shadow: -6px -1px 15px rgba(255, 255, 255, 0.15);
+                    display: flex;
+                    align-items: center;
+
+                    @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                        top: 5px;
+                        left: 5px;
+                        padding: 3px 6px;
+                    }
+
+                    .icon {
+                        margin-right: 10px;
+                    }
+
+                    .category {
+                        font-size: 10px;
+                    }
+                }
+
+                .topic-recommendation {
+                    position: absolute;
+                    font-size: 10px;
+                    bottom: 30px;
+                    right: 7px;
+                    border-radius: 2px;
+                    padding: 5px;
+                    margin: 10px;
+                    background-color: $backgroundColor2;
+                    color: $color6;
+                    z-index: 1;
+
+                    @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                        font-size: 8px;
+                    }
+                }
+
+                .wrapper-topic {
+                    font-size: 10px;
+                    line-height: 15px;
+                    color: $color6;
+                    text-align: right;
+                    position: absolute;
+                    bottom: 14px;
+                    right: 14px;
+                    z-index: 1;
+                    width: 70%;
+
+                    @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                        font-size: 8px;
+                        width: 100%;
+                    }
+
+                    span {
+                        border-radius: 2px;
+                        padding: 5px;
+                        margin: 3px;
+                        background-color: rgb(49, 48, 51, .80);
+                    }
+                }
+
+                .overlay {
+                    width: 100%;
+                    height: 100vh;
+                    overflow: hidden;
+                    background: rgba(28, 27, 31, 0.5);
+                    mix-blend-mode: initial;
+                    position: absolute;
+                }
+
+                img:not(.icon) {
+                    width: 100%;
+                }
+
+            }
+
+            .content {
+                padding: 15px;
+
+                @media only screen and (min-width: 0px) and (max-width: 767px) {
+                    padding: 10px;
+                }
+
+                .by {
+                    font-size: 12px;
+                    color: $color4;
+
+                    @media only screen and (min-width: 0px) and (max-width: 767px) {
+                        font-size: 10px;
+                    }
+                }
+
+                .wrapper-date {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 10px;
+                    margin-bottom: 32px;
+                    color: $color2;
+                    font-size: 12px;
+                    font-weight: bold;
+
+                    @media only screen and (min-width: 0px) and (max-width: 767px) {
+                        font-size: 8px;
+                    }
+
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+
+                .title {
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    line-height: 24px;
+
+                    @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                }
+
+                .rating-and-price {
+                    display: flex;
+                    justify-content: space-between;
+
+                    @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                        display: block;
+                    }
+
+                    .wrapper-rating {
+                        font-size: 12px;
+
+                        @media only screen and (min-width: 0px) and (max-width: 767px) {
+                            font-size: 8px;
+                        }
+
+                        img {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .wrapper-price {
+                        .price {
+                            text-decoration: line-through;
+                            font-size: 12px;
+
+                            @media only screen and (min-width: 0px) and (max-width: 767px) {
+                                font-size: 8px;
+                            }
+                        }
+
+                        .discount-price {
+                            font-size: 16px;
+                            font-weight: bold;
+                            margin-left: 6px;
+
+                            @media only screen and (min-width: 0px) and (max-width: 767px) {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.clear {
+    clear: both;
+}

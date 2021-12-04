@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Full Stack Web Developer Batch 3 2022",
+        "category": "Bootcamp",
+        "recommendation": true,
+        "topic": ["Web Development","React Js"],
+        "by": "Kelas Bersama",
+        "startDate": "27 Okt 2021",
+        "dueDate": "09 Nov 2021",
+        "count": 450,
+        "rating": 4.5,
+        "price": "Rp700.000",
+        "discountPrice": "Rp350.000",
+        "image": "bt1.png"
+    },
+    {
+        "id": 2,
+        "title": "Front End Developer Batch 6 2022",
+        "category": "Bootcamp",
+        "recommendation": false,
+        "topic": ["Web Development","React Js"],
+        "by": "Kelas Bersama",
+        "startDate": "27 Okt 2021",
+        "dueDate": "09 Nov 2021",
+        "count": 450,
+        "rating": 4.5,
+        "price": "Rp700.000",
+        "discountPrice": "Rp350.000",
+        "image": "bt2.png"
+    },
+    {
+        "id": 3,
+        "title": "Front End Developer Batch 6 2022",
+        "category": "Bootcamp",
+        "recommendation": false,
+        "topic": ["Web Development","React Js"],
+        "by": "Kelas Bersama",
+        "startDate": "27 Okt 2021",
+        "dueDate": "09 Nov 2021",
+        "count": 450,
+        "rating": 4.5,
+        "price": "Rp700.000",
+        "discountPrice": "Rp350.000",
+        "image": "bt2.png"
+    },
+    {
+        "id": 4,
+        "title": "Front End Developer Batch 6 2022",
+        "category": "Bootcamp",
+        "recommendation": false,
+        "topic": ["Web Development","React Js"],
+        "by": "Kelas Bersama",
+        "startDate": "27 Okt 2021",
+        "dueDate": "09 Nov 2021",
+        "count": 450,
+        "rating": 4.5,
+        "price": "Rp700.000",
+        "discountPrice": "Rp350.000",
+        "image": "bt2.png"
+    }
+]

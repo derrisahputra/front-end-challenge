@@ -1,0 +1,36 @@
+@import "../scss/foundation/global";
+
+.container {
+    display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+    .container {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        padding: 10px;
+        background-color: $color6;
+        justify-content: center;
+        width: 100%;
+
+        .wrapper-icon {
+            width: 25%;
+
+            img.icon {
+                height: 20px;
+            }
+
+            p {
+                margin-top: 6px;
+                font-size: 12px;
+                color: $color4;
+            }
+
+            p.on {
+                color: #0E47C0;
+                font-weight: 600;
+            }
+        }
+    }
+}

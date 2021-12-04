@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Digital Marketing",
+        "image": "digital-marketing.png",
+        "totalClass": "32 Kelas"
+    },
+    {
+        "id": 2,
+        "title": "UI/UX Design",
+        "image": "ui-ux-design.png",
+        "totalClass": "10 Kelas"
+    },
+    {
+        "id": 3,
+        "title": "IT & Pemrograman",
+        "image": "it.png",
+        "totalClass": "7 Kelas"
+    },
+    {
+        "id": 4,
+        "title": "Creative Writing",
+        "image": "creative-writing.png",
+        "totalClass": "20 Kelas"
+    },
+    {
+        "id": 5,
+        "title": "Business & Finance",
+        "image": "business.png",
+        "totalClass": "5 Kelas"
+    },
+    {
+        "id": 6,
+        "title": "Data Science & Analytics",
+        "image": "science.png",
+        "totalClass": "9 Kelas"
+    },
+    {
+        "id": 7,
+        "title": "Digital Marketing",
+        "image": "digital-marketing.png",
+        "totalClass": "32 Kelas"
+    },
+    {
+        "id": 8,
+        "title": "UI/UX Design",
+        "image": "ui-ux-design.png",
+        "totalClass": "10 Kelas"
+    }
+]

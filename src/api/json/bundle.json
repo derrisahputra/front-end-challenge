@@ -1,0 +1,50 @@
+[
+    {
+       "id": 1,
+       "title": "Paket Belajar Jurnalistik untuk Pemula",
+       "by": "Tempo Institute",
+       "images": [
+           {
+               "image1": "image1.png"
+           },
+           {
+               "image2": "image2.png"
+           }
+        ],
+       "timeTotal": "2 Kelas - 6 Jam",
+       "price": "Rp700,000",
+       "discountPrice": "Rp350.000" 
+    },
+    {
+        "id": 2,
+        "title": "Paket Menulis Feature",
+        "by": "Tempo Institute",
+        "images":  [
+            {
+                "image1": "image3.png"
+            },
+            {
+                "image2": "image4.png"
+            }
+         ],
+        "timeTotal": "3 Kelas - 12 Jam",
+        "price": "Rp700,000",
+        "discountPrice": "Rp350.000" 
+     },
+     {
+        "id": 3,
+        "title": "Paket Belajar Menulis Artikel dan Siaran Pers untuk Humas",
+        "by": "Tempo Institute",
+        "images": [
+            {
+                "image1": "image5.png"
+            },
+            {
+                "image2": "image6.png"
+            }
+         ],
+        "timeTotal": "2 Kelas - 6 Jam",
+        "price": "Rp700,000",
+        "discountPrice": "Rp350.000" 
+     }
+]

@@ -1,0 +1,183 @@
+@use "./foundation/mixin";
+@import "./foundation/global";
+
+.container {
+    position: relative;
+    padding: 100px 200px 200px 100px;
+
+    @media only screen and (min-width: 0px) and (max-width: 1023px) {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .card-container-1 {
+        border-radius: 12px;
+        width: 2500px;
+        margin: auto;
+        // background: white;
+        // @include mixin.shadow1;
+        // padding: 40px 8%;
+        position: relative;
+
+        @media only screen and (min-width: 0px) and (max-width: 1023px) {
+            width: 100%;
+        }
+
+        .card-container-2 {
+            padding: 40px 8%;
+            border-radius: 12px;
+            @include mixin.shadow1;
+            background: white;
+            margin: auto;
+
+            @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                box-shadow: none !important;
+                padding: 0;
+                border-radius: 0;
+                background: none;
+            }
+
+            .title-mobile {
+                font-size: 14px;
+                color: $color2;
+                margin-bottom: 15px;
+
+                @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                    display: block;
+                }
+
+                @media only screen and (min-width: 1024px) {
+                    display: none;
+                }
+            }
+        }
+
+        .wrapper-card {
+            display: flex;
+            height: 250px;
+            position: relative;
+
+            @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                display: block
+            }
+
+            .wrapper-profile {
+                width: 203px;
+                border-radius: 8px;
+                height: 306px !important;
+                @include mixin.shadow1;
+                top: -120px !important;
+                position: absolute;
+                float: left;
+                overflow: hidden;
+                text-align: left;
+
+                @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                    box-shadow: none !important;
+                    height: auto;
+                    border-radius: none;
+                    text-align: center;
+                    top: 0 !important;
+                    width: 100%;
+                }
+
+                img {
+                    height: 243px;
+                    width: 100%;
+                    border-radius: 10px;
+
+                    @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+
+                .profile {
+                    padding: 8px;
+
+                    .name {
+                        margin-bottom: 2px;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .wrapper-content {
+                text-align: left;
+                position: absolute;
+                left: 260px;
+                width: 75%;
+
+                .title-desktop {
+                    font-size: 14px;
+                    color: $color2;
+                    margin-bottom: 15px;
+
+                    @media only screen and (min-width: 0px) and (max-width: 1023px) {
+                        display: none;
+                    }
+
+                    @media only screen and (min-width: 1024px) {
+                        display: block;
+                    }
+                }
+
+                .content {
+                    font-size: 24px;
+                    color: $color3;
+                    line-height: 36px;
+                    font-weight: bold;
+                    width: 45%;
+
+                    @media only screen and (min-width: 0px) and (max-width:1023px) {
+                        width: 100%;
+                        font-size: 12px;
+                        line-height: 20px;
+                        text-align: center;
+                        position: absolute;
+                        top: 120px;
+                    }
+
+                    @media only screen and (min-width: 325px) and (max-width: 374px) {
+                        left: -215px;
+                    }
+
+                    @media only screen and (min-width: 375px) and (max-width: 424px) {
+                        left: -210px;
+                    }
+
+                    @media only screen and (min-width: 425px) and (max-width: 767px) {
+                        left: -160px;
+                    }
+
+                    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+                        left: -140px;
+                    }
+                }
+            }
+        }
+    }
+
+    .background-vector {
+        background-color: #CDE2FB;
+        opacity: 1;
+        border-radius: 12px 0 0 20px;
+        height: 558px;
+        width: 70%;
+        z-index: -2;
+        position: relative;
+        // margin-left: 45%;
+        // margin-top: -200px;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        @media only screen and (min-width: 0px) and (max-width: 1023px) {
+            display: none;
+        }
+    }
+}
+
+.clear {
+    clear: both;
+}

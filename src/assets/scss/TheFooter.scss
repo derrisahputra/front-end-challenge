@@ -1,0 +1,91 @@
+@import "./foundation/global";
+@import "./foundation/mixin";
+
+
+// Fonts
+@font-face {
+    font-family: DMSansFont;
+    src: $fontFamily1;
+}
+@font-face {
+    font-family: InterLightFont;
+    src: $fontFamily3;
+}
+
+.container {
+    @include layout1;
+    padding-top: 40px !important;
+
+    background-color: $backgroundColor1;
+    color: $color6;
+    text-align: left;
+
+    .wrapper {
+        display: flex;
+
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+            display: block;
+        }
+
+        .column {
+            margin-right: 30px;
+        }
+
+        ul {
+
+            h3.sub-title {
+                font-size: 20px;
+                margin-bottom: 24px;
+                font-family: DMSansFont;
+                letter-spacing: 1px;
+            }
+
+            li {
+                list-style: none;
+                margin-bottom: 12px;
+                font-family: InterLightFont;
+            }
+        }
+
+        .kebijakan {
+            @media only screen and (min-width: 0px) and (max-width: 767px) {
+                margin-top: 30px;
+
+            }
+        }
+
+        .reserved {
+            margin-left: 132px;
+
+            @media only screen and (min-width: 0px) and (max-width: 767px) {
+                margin-left: 0;
+                margin-top: 50px;
+
+            }
+
+            font-size: 14px;
+
+            p {
+                margin-bottom: 8px;
+            }
+
+            .icon-wrapper {
+                margin-top: 40px;
+
+                .icon {
+                    height: 32px;
+                    width: 32px;
+                    padding: 8px;
+                    border-radius: 50%;
+                    margin-right: 16px;
+
+                    background-color: $color6;
+
+                    @media only screen and (min-width: 0px) and (max-width: 767px) {
+                        background-color: #CDE2FB;
+                    }
+                }
+            }
+        }
+    }
+}
